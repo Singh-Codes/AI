@@ -1,0 +1,25 @@
+{
+    "model_settings": {
+        "model_type": "transformer",
+        "max_sequence_length": 512,
+        "temperature": 0.7,
+        "top_p": 0.95
+    },
+    "code_generation": {
+        "max_suggestions": 3,
+        "include_comments": true,
+        "style_guide": "pep8",
+        "auto_format": true
+    },
+    "logging": {
+        "level": "INFO",
+        "log_file": "logs/action_log.txt",
+        "max_log_size": 10485760,
+        "backup_count": 5
+    },
+    "testing": {
+        "generate_tests": true,
+        "test_coverage_threshold": 80,
+        "run_tests_after_generation": true
+    }
+}
